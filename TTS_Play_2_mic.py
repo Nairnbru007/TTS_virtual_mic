@@ -30,6 +30,7 @@ def Plaaay(mic=True,loudspeaker=True,text='',):
     #scipy.io.wavfile.write("techno.wav", rate=model.config.sampling_rate, data=output)
     ii=Audio(output, rate=model.config.sampling_rate)
     file=datetime.datetime.now().strftime("%d%m%Y-%H%M%S")
+    os.makedirs(os.path.dirname('audios/'), exist_ok=True)
     with open('audios/'+file+'.wav', 'wb') as f:
         f.write(ii.data)
     print('file done')
