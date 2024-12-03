@@ -18,8 +18,8 @@ def show_devices():
 DEVICENAME_VIRTUAL_MIC = 'CABLE Input (VB-Audio Virtual Cable)'
 DEVICENAME_LOUDSPEAKER = 'Динамики (2- Realtek High Definition Audio)'
 
-# The first start will load model. It gets about 2 min
-# Next playing gets about 3 sec
+# The first start will load model. It takes about 2 min
+# Next playing takes about 3 sec
 
 def Plaaay(mic=True,loudspeaker=True,text='',):
     model = VitsModel.from_pretrained("facebook/mms-tts-rus")
